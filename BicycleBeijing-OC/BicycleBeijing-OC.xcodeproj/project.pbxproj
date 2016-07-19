@@ -372,7 +372,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BicycleBeijing-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "BicycleBeijing-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xypng.BicycleBeiJing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xypng.bicycleBeijing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -386,7 +386,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BicycleBeijing-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "BicycleBeijing-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xypng.BicycleBeiJing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xypng.bicycleBeijing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
