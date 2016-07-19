@@ -35,6 +35,7 @@
     _mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     _mapView.delegate = self;
     _mapView.showsCompass = NO;
+    _mapView.scaleOrigin = CGPointMake(SCREEN_WIDTH - 150, SCREEN_HEIGHT - 30);
     _mapView.showsUserLocation = YES;
     [_mapView setUserTrackingMode: MAUserTrackingModeFollowWithHeading animated:YES];
 
