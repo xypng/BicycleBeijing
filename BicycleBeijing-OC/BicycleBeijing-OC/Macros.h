@@ -13,5 +13,6 @@
 #import "DimensMacros.h"
 #import "NotificationMacros.h"
 #import "PathMacros.h"
+#import "KeyMacros.h"
 
 #endif /* Macros_h */

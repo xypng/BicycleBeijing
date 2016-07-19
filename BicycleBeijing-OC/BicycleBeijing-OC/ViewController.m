@@ -8,14 +8,16 @@
 
 #import "ViewController.h"
 #import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
 #import "ImageUtilities.h"
 
-@interface ViewController ()<MAMapViewDelegate>
+@interface ViewController ()<MAMapViewDelegate, AMapSearchDelegate>
 {
     //地图
     MAMapView *_mapView;
     //当前位置
     CLLocationCoordinate2D _currentCoordiate;
+    AMapSearchAPI *_search;
 }
 
 @end
@@ -24,6 +26,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    //初始化检索对象
+    _search = [[AMapSearchAPI alloc] init];
+    _search.delegate = self;
 
     [self addMapView];
     [self addScaleButton];

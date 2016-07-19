@@ -39,6 +39,7 @@
 		AE33F2421D3E034E00EB6286 /* NotificationMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationMacros.h; sourceTree = "<group>"; };
 		AE33F2431D3E03A600EB6286 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		AE33F2441D3E042B00EB6286 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		AEFE05791D3E2D460016E5E3 /* KeyMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				AE33F2421D3E034E00EB6286 /* NotificationMacros.h */,
 				AE33F2431D3E03A600EB6286 /* Macros.h */,
 				AE33F2441D3E042B00EB6286 /* PrefixHeader.pch */,
+				AEFE05791D3E2D460016E5E3 /* KeyMacros.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
