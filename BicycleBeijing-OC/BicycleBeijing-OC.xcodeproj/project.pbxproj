@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		816C3069C0C96B48E1BEE35B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30092F3330CAC3FE23E202BF /* libPods.a */; };
+		AE02E6701D41F147009AAF16 /* ClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AE02E66B1D41F147009AAF16 /* ClusterAnnotation.m */; };
+		AE02E6711D41F147009AAF16 /* CoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = AE02E66D1D41F147009AAF16 /* CoordinateQuadTree.m */; };
+		AE02E6721D41F147009AAF16 /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = AE02E66F1D41F147009AAF16 /* QuadTree.m */; };
+		AE02E6791D41F153009AAF16 /* ClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE02E6741D41F153009AAF16 /* ClusterAnnotationView.m */; };
+		AE02E67A1D41F153009AAF16 /* ClusterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE02E6761D41F153009AAF16 /* ClusterTableViewCell.m */; };
+		AE02E67B1D41F153009AAF16 /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE02E6781D41F153009AAF16 /* CustomCalloutView.m */; };
 		AE2259CD1D40B90E005C4343 /* beijingbicycle.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AE2259C81D40B90E005C4343 /* beijingbicycle.sqlite */; };
 		AE2259CE1D40B90E005C4343 /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2259CA1D40B90E005C4343 /* Bicycle.m */; };
 		AE2259CF1D40B90E005C4343 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2259CC1D40B90E005C4343 /* DataManager.m */; };
@@ -24,6 +30,18 @@
 		0CD7BA6438DB3168D1DE8885 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		30092F3330CAC3FE23E202BF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		313989F4A0359DEFDEB879F4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AE02E66A1D41F147009AAF16 /* ClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotation.h; sourceTree = "<group>"; };
+		AE02E66B1D41F147009AAF16 /* ClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotation.m; sourceTree = "<group>"; };
+		AE02E66C1D41F147009AAF16 /* CoordinateQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateQuadTree.h; sourceTree = "<group>"; };
+		AE02E66D1D41F147009AAF16 /* CoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateQuadTree.m; sourceTree = "<group>"; };
+		AE02E66E1D41F147009AAF16 /* QuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
+		AE02E66F1D41F147009AAF16 /* QuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadTree.m; sourceTree = "<group>"; };
+		AE02E6731D41F153009AAF16 /* ClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotationView.h; sourceTree = "<group>"; };
+		AE02E6741D41F153009AAF16 /* ClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotationView.m; sourceTree = "<group>"; };
+		AE02E6751D41F153009AAF16 /* ClusterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterTableViewCell.h; sourceTree = "<group>"; };
+		AE02E6761D41F153009AAF16 /* ClusterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterTableViewCell.m; sourceTree = "<group>"; };
+		AE02E6771D41F153009AAF16 /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
+		AE02E6781D41F153009AAF16 /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
 		AE2259C81D40B90E005C4343 /* beijingbicycle.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = beijingbicycle.sqlite; sourceTree = "<group>"; };
 		AE2259C91D40B90E005C4343 /* Bicycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bicycle.h; sourceTree = "<group>"; };
 		AE2259CA1D40B90E005C4343 /* Bicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bicycle.m; sourceTree = "<group>"; };
@@ -70,6 +88,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE02E6681D41F0CE009AAF16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE02E66A1D41F147009AAF16 /* ClusterAnnotation.h */,
+				AE02E66B1D41F147009AAF16 /* ClusterAnnotation.m */,
+				AE02E66C1D41F147009AAF16 /* CoordinateQuadTree.h */,
+				AE02E66D1D41F147009AAF16 /* CoordinateQuadTree.m */,
+				AE02E66E1D41F147009AAF16 /* QuadTree.h */,
+				AE02E66F1D41F147009AAF16 /* QuadTree.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE02E6691D41F0E4009AAF16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE02E6731D41F153009AAF16 /* ClusterAnnotationView.h */,
+				AE02E6741D41F153009AAF16 /* ClusterAnnotationView.m */,
+				AE02E6751D41F153009AAF16 /* ClusterTableViewCell.h */,
+				AE02E6761D41F153009AAF16 /* ClusterTableViewCell.m */,
+				AE02E6771D41F153009AAF16 /* CustomCalloutView.h */,
+				AE02E6781D41F153009AAF16 /* CustomCalloutView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AE2259C71D40B90E005C4343 /* DB */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +147,8 @@
 		AE33F21E1D3DC1F200EB6286 /* BicycleBeijing-OC */ = {
 			isa = PBXGroup;
 			children = (
+				AE02E6691D41F0E4009AAF16 /* View */,
+				AE02E6681D41F0CE009AAF16 /* Model */,
 				AE2259C71D40B90E005C4343 /* DB */,
 				AE33F2221D3DC1F200EB6286 /* AppDelegate.h */,
 				AE33F2231D3DC1F200EB6286 /* AppDelegate.m */,
@@ -273,10 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE02E67B1D41F153009AAF16 /* CustomCalloutView.m in Sources */,
+				AE02E6791D41F153009AAF16 /* ClusterAnnotationView.m in Sources */,
+				AE02E6701D41F147009AAF16 /* ClusterAnnotation.m in Sources */,
 				AE33F2391D3DE11C00EB6286 /* ImageUtilities.m in Sources */,
+				AE02E6711D41F147009AAF16 /* CoordinateQuadTree.m in Sources */,
 				AE2259CF1D40B90E005C4343 /* DataManager.m in Sources */,
+				AE02E67A1D41F153009AAF16 /* ClusterTableViewCell.m in Sources */,
 				AE33F2271D3DC1F200EB6286 /* ViewController.m in Sources */,
 				AE33F2241D3DC1F200EB6286 /* AppDelegate.m in Sources */,
+				AE02E6721D41F147009AAF16 /* QuadTree.m in Sources */,
 				AE2259CE1D40B90E005C4343 /* Bicycle.m in Sources */,
 				AE33F2211D3DC1F200EB6286 /* main.m in Sources */,
 			);
