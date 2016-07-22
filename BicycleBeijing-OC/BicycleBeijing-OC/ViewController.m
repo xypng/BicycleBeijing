@@ -190,6 +190,9 @@ updatingLocation:(BOOL)updatingLocation
 
 - (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view
 {
+    if (![view isMemberOfClass:[ClusterAnnotationView class]]) {
+        return;
+    }
     ClusterAnnotation *annotation = (ClusterAnnotation *)view.annotation;
     for (AMapPOI *poi in annotation.pois)
     {
