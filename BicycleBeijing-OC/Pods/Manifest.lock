@@ -4,14 +4,19 @@ PODS:
   - AMapFoundation (1.1.0)
   - AMapSearch (4.1.0):
     - AMapFoundation (~> 1.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
 
 DEPENDENCIES:
   - AMap3DMap
   - AMapSearch
+  - FMDB
 
 SPEC CHECKSUMS:
   AMap3DMap: 8619d67fe7b3bbe45abf74b3434eb9ab20220507
   AMapFoundation: 15db20567e6512422a086a01b42a88b145bc2500
   AMapSearch: cb4722480d2d4331a032d43bd1070ed0fa55dac9
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
 
 COCOAPODS: 0.39.0

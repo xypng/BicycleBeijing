@@ -10,6 +10,8 @@
 #import <MAMapKit/MAMapKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
 #import "ImageUtilities.h"
+#import "DataManager.h"
+#import "Bicycle.h"
 
 @interface ViewController ()<MAMapViewDelegate, AMapSearchDelegate>
 {
@@ -34,20 +36,26 @@
     [self addMapView];
     [self addScaleButton];
     [self addLocationButton];
-
+//    [self addAnnotation];
 }
 
+/**
+ *  添加地图
+ */
 - (void)addMapView {
     _mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     _mapView.delegate = self;
     _mapView.showsCompass = NO;
     _mapView.scaleOrigin = CGPointMake(SCREEN_WIDTH - 150, SCREEN_HEIGHT - 30);
     _mapView.showsUserLocation = YES;
-    [_mapView setUserTrackingMode: MAUserTrackingModeFollowWithHeading animated:YES];
+    [_mapView setUserTrackingMode: MAUserTrackingModeFollow animated:YES];
 
     [self.view addSubview:_mapView];
 }
 
+/**
+ *  添加缩放按钮
+ */
 - (void)addScaleButton {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-60, SCREEN_HEIGHT-200, 40, 80)];
     view.backgroundColor = [UIColor whiteColor];
@@ -82,6 +90,9 @@
     [view addSubview:reduceScaleButton];
 }
 
+/**
+ *  添加到定位位置按钮
+ */
 - (void)addLocationButton {
     UIButton *locationButton = [UIButton buttonWithType:UIButtonTypeCustom];
     locationButton.frame = CGRectMake(20, SCREEN_HEIGHT-100, 40, 40);
@@ -98,6 +109,22 @@
     [self.view addSubview:locationButton];
 }
 
+/**
+ *  添加自行车网点标注
+ */
+- (void)addAnnotation {
+    NSArray<Bicycle *> *bicycles = [DataManager getBicycles];
+    for (Bicycle *bicycle in bicycles) {
+        MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc] init];
+        pointAnnotation.coordinate = CLLocationCoordinate2DMake(bicycle.latitude, bicycle.longitude);
+        pointAnnotation.title = bicycle.name;
+        pointAnnotation.subtitle = bicycle.address;
+        [_mapView addAnnotation:pointAnnotation];
+    }
+}
+
+
+#pragma mark - 按钮事件
 - (void)scaleZoom:(UIButton *)btn {
     CGFloat zoomLevel = _mapView.zoomLevel;
     switch (btn.tag) {
@@ -129,15 +156,90 @@
     }
 }
 
+
+#pragma mark - MAMapViewDelegate
+//定位成功返回
 -(void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation
 updatingLocation:(BOOL)updatingLocation
 {
     if(updatingLocation)
     {
         //取出当前位置的坐标
-        NSLog(@"latitude : %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+        DLog(@"latitude : %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
         _currentCoordiate = userLocation.coordinate;
     }
+}
+
+//定位失败返回
+- (void)mapView:(MAMapView *)mapView didFailToLocateUserWithError:(NSError *)error
+{
+    DLog(@"定位失败，请检查配置");
+}
+
+/**
+ *  地图将要发生移动时调用此接口
+*/
+- (void)mapView:(MAMapView *)mapView mapWillMoveByUser:(BOOL)wasUserAction {
+    DLog(@"地图将要移动");
+}
+
+/**
+ *  地图移动结束后调用此接口
+*/
+- (void)mapView:(MAMapView *)mapView mapDidMoveByUser:(BOOL)wasUserAction {
+    DLog(@"地图结束移动");
+}
+
+/**
+ *  地图将要发生缩放时调用此接口
+ */
+- (void)mapView:(MAMapView *)mapView mapWillZoomByUser:(BOOL)wasUserAction {
+    DLog(@"地图将要缩放");
+}
+
+/**
+ *  地图缩放结束后调用此接口
+ */
+- (void)mapView:(MAMapView *)mapView mapDidZoomByUser:(BOOL)wasUserAction {
+    DLog(@"地图结束缩放");
+}
+
+/**
+ * @brief 地图开始加载
+ */
+- (void)mapViewWillStartLoadingMap:(MAMapView *)mapView {
+    DLog(@"地图开始加载");
+}
+
+/**
+ * @brief 地图加载成功
+ */
+- (void)mapViewDidFinishLoadingMap:(MAMapView *)mapView {
+    DLog(@"地图加载成功");
+}
+
+//地图加载失败
+- (void)mapViewDidFailLoadingMap:(MAMapView *)mapView withError:(NSError *)error
+{
+    DLog(@"地图加载失败");
+}
+
+#pragma mark - AMapSearchDelegate
+//云图搜索回调
+- (void)onCloudSearchDone:(AMapCloudSearchBaseRequest *)request response:(AMapCloudPOISearchResponse *)response
+{
+    if(response.POIs.count == 0)
+    {
+        return;
+    }
+    for (AMapCloudPOI *poi in response.POIs) {
+        MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc] init];
+        pointAnnotation.coordinate = CLLocationCoordinate2DMake(poi.location.latitude, poi.location.longitude);
+        pointAnnotation.title = poi.name;
+        pointAnnotation.subtitle = poi.address;
+        [_mapView addAnnotation:pointAnnotation];
+    }
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {

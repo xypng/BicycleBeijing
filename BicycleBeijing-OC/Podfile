@@ -1,3 +1,4 @@
 platform :ios, '7.0'
 pod 'AMap3DMap'
 pod 'AMapSearch'
+pod 'FMDB'

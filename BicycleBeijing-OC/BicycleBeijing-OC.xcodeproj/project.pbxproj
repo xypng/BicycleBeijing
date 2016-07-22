@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		816C3069C0C96B48E1BEE35B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30092F3330CAC3FE23E202BF /* libPods.a */; };
+		AE2259CD1D40B90E005C4343 /* beijingbicycle.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AE2259C81D40B90E005C4343 /* beijingbicycle.sqlite */; };
+		AE2259CE1D40B90E005C4343 /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2259CA1D40B90E005C4343 /* Bicycle.m */; };
+		AE2259CF1D40B90E005C4343 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2259CC1D40B90E005C4343 /* DataManager.m */; };
 		AE33F2211D3DC1F200EB6286 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE33F2201D3DC1F200EB6286 /* main.m */; };
 		AE33F2241D3DC1F200EB6286 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE33F2231D3DC1F200EB6286 /* AppDelegate.m */; };
 		AE33F2271D3DC1F200EB6286 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE33F2261D3DC1F200EB6286 /* ViewController.m */; };
@@ -21,6 +24,11 @@
 		0CD7BA6438DB3168D1DE8885 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		30092F3330CAC3FE23E202BF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		313989F4A0359DEFDEB879F4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AE2259C81D40B90E005C4343 /* beijingbicycle.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = beijingbicycle.sqlite; sourceTree = "<group>"; };
+		AE2259C91D40B90E005C4343 /* Bicycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bicycle.h; sourceTree = "<group>"; };
+		AE2259CA1D40B90E005C4343 /* Bicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bicycle.m; sourceTree = "<group>"; };
+		AE2259CB1D40B90E005C4343 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		AE2259CC1D40B90E005C4343 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		AE33F21C1D3DC1F200EB6286 /* BicycleBeijing-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BicycleBeijing-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE33F2201D3DC1F200EB6286 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE33F2221D3DC1F200EB6286 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +70,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE2259C71D40B90E005C4343 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				AE2259C81D40B90E005C4343 /* beijingbicycle.sqlite */,
+				AE2259C91D40B90E005C4343 /* Bicycle.h */,
+				AE2259CA1D40B90E005C4343 /* Bicycle.m */,
+				AE2259CB1D40B90E005C4343 /* DataManager.h */,
+				AE2259CC1D40B90E005C4343 /* DataManager.m */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
 		AE33F2131D3DC1F200EB6286 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +103,7 @@
 		AE33F21E1D3DC1F200EB6286 /* BicycleBeijing-OC */ = {
 			isa = PBXGroup;
 			children = (
+				AE2259C71D40B90E005C4343 /* DB */,
 				AE33F2221D3DC1F200EB6286 /* AppDelegate.h */,
 				AE33F2231D3DC1F200EB6286 /* AppDelegate.m */,
 				AE33F2251D3DC1F200EB6286 /* ViewController.h */,
@@ -164,7 +185,6 @@
 				TargetAttributes = {
 					AE33F21B1D3DC1F200EB6286 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3F97CAK27B;
 					};
 				};
 			};
@@ -191,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2259CD1D40B90E005C4343 /* beijingbicycle.sqlite in Resources */,
 				AE33F22F1D3DC1F200EB6286 /* LaunchScreen.storyboard in Resources */,
 				AE33F22C1D3DC1F200EB6286 /* Assets.xcassets in Resources */,
 				AE33F22A1D3DC1F200EB6286 /* Main.storyboard in Resources */,
@@ -253,8 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE33F2391D3DE11C00EB6286 /* ImageUtilities.m in Sources */,
+				AE2259CF1D40B90E005C4343 /* DataManager.m in Sources */,
 				AE33F2271D3DC1F200EB6286 /* ViewController.m in Sources */,
 				AE33F2241D3DC1F200EB6286 /* AppDelegate.m in Sources */,
+				AE2259CE1D40B90E005C4343 /* Bicycle.m in Sources */,
 				AE33F2211D3DC1F200EB6286 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,12 +391,15 @@
 			baseConfigurationReference = 313989F4A0359DEFDEB879F4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BicycleBeijing-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "BicycleBeijing-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xypng.bicycleBeijing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -382,12 +408,15 @@
 			baseConfigurationReference = 0CD7BA6438DB3168D1DE8885 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BicycleBeijing-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "BicycleBeijing-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xypng.bicycleBeijing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
