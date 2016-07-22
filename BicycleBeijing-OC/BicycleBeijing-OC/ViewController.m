@@ -17,6 +17,8 @@
 #import "ClusterAnnotationView.h"
 #import "ClusterAnnotation.h"
 
+#define kCalloutViewMargin -12
+
 @interface ViewController ()<MAMapViewDelegate, AMapSearchDelegate>
 {
     //当前位置
@@ -177,6 +179,30 @@ updatingLocation:(BOOL)updatingLocation
     }
 
     return nil;
+}
+
+- (void)mapView:(MAMapView *)mapView didDeselectAnnotationView:(MAAnnotationView *)view
+{
+    [self.selectedPoiArray removeAllObjects];
+    [self.customCalloutView dismissCalloutView];
+    self.customCalloutView.delegate = nil;
+}
+
+- (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view
+{
+    ClusterAnnotation *annotation = (ClusterAnnotation *)view.annotation;
+    for (AMapPOI *poi in annotation.pois)
+    {
+        [self.selectedPoiArray addObject:poi];
+    }
+
+    [self.customCalloutView setPoiArray:self.selectedPoiArray];
+//    self.customCalloutView.delegate = self;
+
+    // 调整位置
+    self.customCalloutView.center = CGPointMake(CGRectGetMidX(view.bounds), -CGRectGetMidY(self.customCalloutView.bounds) - CGRectGetMidY(view.bounds) - kCalloutViewMargin);
+
+    [view addSubview:self.customCalloutView];
 }
 
 #pragma mark - AMapSearchDelegate
