@@ -9,7 +9,6 @@
 #import "CustomCalloutView.h"
 #import "ClusterTableViewCell.h"
 
-
 const NSInteger kArrorHeight = 10;
 const NSInteger kCornerRadius = 6;
 
@@ -17,7 +16,7 @@ const NSInteger kWidth = 260;
 const NSInteger kMaxHeight = 200;
 
 const NSInteger kTableViewMargin = 4;
-const NSInteger kCellHeight = 44;
+const NSInteger kCellHeight = 152;
 
 
 @interface CustomCalloutView()
@@ -50,7 +49,12 @@ const NSInteger kCellHeight = 44;
 
 #pragma mark - UITableViewDelegate
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return kCellHeight;
+//}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     return kCellHeight;
 }
@@ -64,33 +68,12 @@ const NSInteger kCellHeight = 44;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *identifier = @"ClusterCell";
-    ClusterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    
-    if (cell  == nil)
-    {
-        cell = [[ClusterTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                           reuseIdentifier:identifier];
-    }
-
+    ClusterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ClusterTableViewCell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     AMapPOI *poi = [self.poiArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = poi.name;
-    cell.detailTextLabel.text = poi.address;
-    
-    [cell.tapBtn addTarget:self action:@selector(detailBtnTap:) forControlEvents:UIControlEventTouchUpInside];
-    cell.tapBtn.tag = indexPath.row;
-    
+    cell.nameLabel.text = poi.name;
+    cell.addressLabel.text = poi.address;
     return cell;
-}
-
-#pragma mark - TapGesture
-
-- (void)detailBtnTap:(UIButton *)button
-{
-    if ([self.delegate respondsToSelector:@selector(didDetailButtonTapped:)])
-    {
-        [self.delegate didDetailButtonTapped:button.tag];
-    }
 }
 
 #pragma mark - draw rect
@@ -141,11 +124,14 @@ const NSInteger kCellHeight = 44;
     self = [super initWithFrame:frame];
     if (self)
     {
+
         self.backgroundColor = [UIColor clearColor];
 
         self.tableview = [[UITableView alloc] init];
+        self.tableview.rowHeight = UITableViewAutomaticDimension;
         self.tableview.delegate = self;
         self.tableview.dataSource = self;
+        [self.tableview registerNib:[UINib nibWithNibName:@"ClusterTableViewCell" bundle:nil] forCellReuseIdentifier:@"ClusterTableViewCell"];
         
         [self addSubview:self.tableview];
     }

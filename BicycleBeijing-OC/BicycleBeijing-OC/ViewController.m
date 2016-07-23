@@ -171,7 +171,6 @@ updatingLocation:(BOOL)updatingLocation
         /* 设置annotationView的属性. */
         annotationView.annotation = annotation;
         annotationView.count = [(ClusterAnnotation *)annotation count];
-
         /* 不弹出原生annotation */
         annotationView.canShowCallout = NO;
 
@@ -186,6 +185,7 @@ updatingLocation:(BOOL)updatingLocation
     [self.selectedPoiArray removeAllObjects];
     [self.customCalloutView dismissCalloutView];
     self.customCalloutView.delegate = nil;
+    [self.mapView deselectAnnotation:view.annotation animated:YES];
 }
 
 - (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view
@@ -199,13 +199,14 @@ updatingLocation:(BOOL)updatingLocation
         [self.selectedPoiArray addObject:poi];
     }
 
-    [self.customCalloutView setPoiArray:self.selectedPoiArray];
-//    self.customCalloutView.delegate = self;
-
-    // 调整位置
-    self.customCalloutView.center = CGPointMake(CGRectGetMidX(view.bounds), -CGRectGetMidY(self.customCalloutView.bounds) - CGRectGetMidY(view.bounds) - kCalloutViewMargin);
-
-    [view addSubview:self.customCalloutView];
+    [self.mapView setSelectedAnnotations:@[annotation]];
+//    [self.customCalloutView setPoiArray:self.selectedPoiArray];
+////    self.customCalloutView.delegate = self;
+//
+//    // 调整位置
+//    self.customCalloutView.center = CGPointMake(CGRectGetMidX(view.bounds), -CGRectGetMidY(self.customCalloutView.bounds) - CGRectGetMidY(view.bounds) - kCalloutViewMargin);
+//
+//    [view addSubview:self.customCalloutView];
 }
 
 #pragma mark - AMapSearchDelegate

@@ -1,15 +1,15 @@
 //
 //  ClusterTableViewCell.h
-//  iOS_3D_ClusterAnnotation
+//  BicycleBeijing-OC
 //
-//  Created by PC on 15/7/7.
-//  Copyright (c) 2015年 FENGSHENG. All rights reserved.
+//  Created by XiaoYiPeng on 16/7/22.
+//  Copyright © 2016年 XiaoYiPeng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface ClusterTableViewCell : UITableViewCell
-
-@property (strong, nonatomic)  UIButton *tapBtn;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 
 @end
