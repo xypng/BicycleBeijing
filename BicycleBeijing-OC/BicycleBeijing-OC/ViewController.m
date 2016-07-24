@@ -182,10 +182,10 @@ updatingLocation:(BOOL)updatingLocation
 
 - (void)mapView:(MAMapView *)mapView didDeselectAnnotationView:(MAAnnotationView *)view
 {
+    [view setNeedsDisplay];
     [self.selectedPoiArray removeAllObjects];
     [self.customCalloutView dismissCalloutView];
     self.customCalloutView.delegate = nil;
-    [self.mapView deselectAnnotation:view.annotation animated:YES];
 }
 
 - (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view
@@ -193,20 +193,21 @@ updatingLocation:(BOOL)updatingLocation
     if (![view isMemberOfClass:[ClusterAnnotationView class]]) {
         return;
     }
+    [view setNeedsDisplay];
     ClusterAnnotation *annotation = (ClusterAnnotation *)view.annotation;
     for (AMapPOI *poi in annotation.pois)
     {
         [self.selectedPoiArray addObject:poi];
     }
 
-    [self.mapView setSelectedAnnotations:@[annotation]];
+    [self.mapView setCenterCoordinate:view.annotation.coordinate animated:YES];
 //    [self.customCalloutView setPoiArray:self.selectedPoiArray];
-////    self.customCalloutView.delegate = self;
-//
-//    // 调整位置
-//    self.customCalloutView.center = CGPointMake(CGRectGetMidX(view.bounds), -CGRectGetMidY(self.customCalloutView.bounds) - CGRectGetMidY(view.bounds) - kCalloutViewMargin);
-//
-//    [view addSubview:self.customCalloutView];
+//    self.customCalloutView.delegate = self;
+
+    // 调整位置
+    self.customCalloutView.center = CGPointMake(CGRectGetMidX(view.bounds), -CGRectGetMidY(self.customCalloutView.bounds) - CGRectGetMidY(view.bounds) - kCalloutViewMargin);
+
+    [view addSubview:self.customCalloutView];
 }
 
 #pragma mark - AMapSearchDelegate

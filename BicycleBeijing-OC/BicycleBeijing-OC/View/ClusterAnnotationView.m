@@ -144,6 +144,11 @@ CGFloat ScaledValueForValue(CGFloat value)
 
 - (void)drawRect:(CGRect)rect
 {
+    if (self.isSelected) {
+        self.innerCircleFillColor = [UIColor colorWithRed:(95 / 255.0) green:(42 / 255.0) blue:(255 / 255.0) alpha:1.0];
+    } else {
+        self.innerCircleFillColor = [UIColor colorWithRed:(255.0 / 255.0) green:(95 / 255.0) blue:(42 / 255.0) alpha:1.0];
+    }
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetAllowsAntialiasing(context, true);
@@ -165,19 +170,19 @@ CGFloat ScaledValueForValue(CGFloat value)
     CGContextFillEllipseInRect(context, circleFrame);
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [self setSelected:selected];
-}
-
-- (void)setSelected:(BOOL)selected {
-    if (selected) {
-        self.innerCircleFillColor = [UIColor colorWithRed:(95 / 255.0) green:(42 / 255.0) blue:(255 / 255.0) alpha:1.0];
-        [self setNeedsDisplay];
-    } else {
-        self.innerCircleFillColor = [UIColor colorWithRed:(255.0 / 255.0) green:(95 / 255.0) blue:(42 / 255.0) alpha:1.0];
-        [self setNeedsDisplay];
-    }
-}
+//- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+//    [self setSelected:selected];
+//}
+//
+//- (void)setSelected:(BOOL)selected {
+//    if (selected) {
+//        self.innerCircleFillColor = [UIColor colorWithRed:(95 / 255.0) green:(42 / 255.0) blue:(255 / 255.0) alpha:1.0];
+//        [self setNeedsDisplay];
+//    } else {
+//        self.innerCircleFillColor = [UIColor colorWithRed:(255.0 / 255.0) green:(95 / 255.0) blue:(42 / 255.0) alpha:1.0];
+//        [self setNeedsDisplay];
+//    }
+//}
 
 
 @end
