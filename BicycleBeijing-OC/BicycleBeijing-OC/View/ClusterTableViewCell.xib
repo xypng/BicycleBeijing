@@ -151,6 +151,7 @@
                 <outlet property="addressLabel" destination="5sE-BC-GJp" id="RXJ-49-y6B"/>
                 <outlet property="nameLabel" destination="q47-3v-rtt" id="MNT-x6-TY5"/>
                 <outlet property="numLabel" destination="CXa-XO-UrL" id="fKv-q2-g01"/>
+                <outlet property="seperatorView" destination="wRJ-kb-pE8" id="Zrr-ma-zJK"/>
             </connections>
             <point key="canvasLocation" x="441.5" y="303.5"/>
         </tableViewCell>

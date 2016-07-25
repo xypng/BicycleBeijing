@@ -199,7 +199,6 @@ updatingLocation:(BOOL)updatingLocation
     {
         [self.selectedPoiArray addObject:poi];
     }
-
     [self.mapView setCenterCoordinate:view.annotation.coordinate animated:YES];
     [self.customCalloutView setPoiArray:self.selectedPoiArray];
 //    self.customCalloutView.delegate = self;

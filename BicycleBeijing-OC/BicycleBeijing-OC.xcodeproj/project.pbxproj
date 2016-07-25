@@ -18,6 +18,7 @@
 		AE2259CD1D40B90E005C4343 /* beijingbicycle.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AE2259C81D40B90E005C4343 /* beijingbicycle.sqlite */; };
 		AE2259CE1D40B90E005C4343 /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2259CA1D40B90E005C4343 /* Bicycle.m */; };
 		AE2259CF1D40B90E005C4343 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2259CC1D40B90E005C4343 /* DataManager.m */; };
+		AE2FC6ED1D45EAD600AD4D90 /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2FC6EC1D45EAD600AD4D90 /* CALayer+XibConfiguration.m */; };
 		AE33F2211D3DC1F200EB6286 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE33F2201D3DC1F200EB6286 /* main.m */; };
 		AE33F2241D3DC1F200EB6286 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE33F2231D3DC1F200EB6286 /* AppDelegate.m */; };
 		AE33F2271D3DC1F200EB6286 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE33F2261D3DC1F200EB6286 /* ViewController.m */; };
@@ -49,6 +50,8 @@
 		AE2259CA1D40B90E005C4343 /* Bicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bicycle.m; sourceTree = "<group>"; };
 		AE2259CB1D40B90E005C4343 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		AE2259CC1D40B90E005C4343 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		AE2FC6EB1D45EAD600AD4D90 /* CALayer+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibConfiguration.h"; sourceTree = "<group>"; };
+		AE2FC6EC1D45EAD600AD4D90 /* CALayer+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfiguration.m"; sourceTree = "<group>"; };
 		AE33F21C1D3DC1F200EB6286 /* BicycleBeijing-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BicycleBeijing-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE33F2201D3DC1F200EB6286 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE33F2221D3DC1F200EB6286 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +132,15 @@
 			path = DB;
 			sourceTree = "<group>";
 		};
+		AE2FC6EA1D45EAC000AD4D90 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AE2FC6EB1D45EAD600AD4D90 /* CALayer+XibConfiguration.h */,
+				AE2FC6EC1D45EAD600AD4D90 /* CALayer+XibConfiguration.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		AE33F2131D3DC1F200EB6286 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +165,7 @@
 				AE02E6691D41F0E4009AAF16 /* View */,
 				AE02E6681D41F0CE009AAF16 /* Model */,
 				AE2259C71D40B90E005C4343 /* DB */,
+				AE2FC6EA1D45EAC000AD4D90 /* Categories */,
 				AE33F2221D3DC1F200EB6286 /* AppDelegate.h */,
 				AE33F2231D3DC1F200EB6286 /* AppDelegate.m */,
 				AE33F2251D3DC1F200EB6286 /* ViewController.h */,
@@ -330,6 +343,7 @@
 				AE33F2391D3DE11C00EB6286 /* ImageUtilities.m in Sources */,
 				AE02E6711D41F147009AAF16 /* CoordinateQuadTree.m in Sources */,
 				AE2259CF1D40B90E005C4343 /* DataManager.m in Sources */,
+				AE2FC6ED1D45EAD600AD4D90 /* CALayer+XibConfiguration.m in Sources */,
 				AE33F2271D3DC1F200EB6286 /* ViewController.m in Sources */,
 				AE33F2241D3DC1F200EB6286 /* AppDelegate.m in Sources */,
 				AE02E6721D41F147009AAF16 /* QuadTree.m in Sources */,
