@@ -19,7 +19,7 @@
 
 #define kCalloutViewMargin -12
 
-@interface ViewController ()<MAMapViewDelegate, AMapSearchDelegate>
+@interface ViewController ()<MAMapViewDelegate, AMapSearchDelegate, CustomCalloutViewTapDelegate>
 {
     //当前位置
     CLLocationCoordinate2D _currentCoordiate;
@@ -50,6 +50,10 @@
  *
  */
 @property (nonatomic, assign) BOOL shouldRegionChangeReCalculate;
+/**
+ *  等地图变化完毕需要选中的的网点
+ */
+@property (nonatomic, assign) Bicycle *needSelectedBicycle;
 
 @end
 
@@ -78,6 +82,18 @@
     /* 更新. */
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.mapView addAnnotations:[toAdd allObjects]];
+        /**
+         *  有时候添加完了标注的view后，有的要选中
+         */
+        if (self.needSelectedBicycle) {
+            for (ClusterAnnotation *annotation in toAdd) {
+                if (annotation.coordinate.longitude == self.needSelectedBicycle.longitude &&
+                    annotation.coordinate.latitude == self.needSelectedBicycle.latitude) {
+                    [self.mapView selectAnnotation:annotation animated:YES];
+                    self.needSelectedBicycle = nil;
+                }
+            }
+        }
         [self.mapView removeAnnotations:[toRemove allObjects]];
     });
 }
@@ -133,7 +149,7 @@
         MACoordinateRegion theRegion = MACoordinateRegionMake(myCoordinate, MACoordinateSpanMake(0.2, 0.2));
         [_mapView setScrollEnabled:YES];
         [_mapView setRegion:theRegion animated:YES];
-        [_mapView setZoomLevel:16.1 animated:NO];
+        [_mapView setZoomLevel:16.1 animated:YES];
     }
 }
 
@@ -211,10 +227,7 @@ updatingLocation:(BOOL)updatingLocation
     }
 //    [self.mapView setCenterCoordinate:view.annotation.coordinate animated:YES];
     [self.customCalloutView setPoiArray:self.selectedPoiArray];
-//    self.customCalloutView.delegate = self;
-
-    // 调整位置
-//    self.customCalloutView.center = CGPointMake(CGRectGetMidX(view.bounds), -CGRectGetMidY(self.customCalloutView.bounds) - CGRectGetMidY(view.bounds) - kCalloutViewMargin);
+    self.customCalloutView.delegate = self;
 
     [self.view addSubview:self.customCalloutView];
 }
@@ -237,6 +250,24 @@ updatingLocation:(BOOL)updatingLocation
 
 }
 
+#pragma mark - CustomCalloutViewTapDelegate
+//点击了网点列表上的一行
+- (void)didDetailButtonTapped:(NSInteger)index {
+    Bicycle *bicycle = self.selectedPoiArray[index];
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(bicycle.latitude, bicycle.longitude);
+    [self.customCalloutView dismissCalloutView];
+    [self.mapView setCenterCoordinate:coordinate animated:YES];
+    [self.mapView setZoomLevel:16.1 animated:YES];
+    self.needSelectedBicycle = bicycle;
+//    for (ClusterAnnotationView *view in self.mapView.subviews[1].subviews) {
+//        if (view.annotation.coordinate.latitude == bicycle.latitude &&
+//            view.annotation.coordinate.longitude == bicycle.longitude) {
+//            [self.mapView selectAnnotation:view.annotation animated:YES];
+//        }
+//    }
+
+}
+
 #pragma mark - Life Cycle
 
 - (void)viewDidLoad {
@@ -249,6 +280,7 @@ updatingLocation:(BOOL)updatingLocation
     self.selectedPoiArray = [[NSMutableArray alloc] init];
     self.customCalloutView = [[CustomCalloutView alloc] init];
     [self.customCalloutView.backButton addTarget:self action:@selector(dismissCalloutView:) forControlEvents:UIControlEventTouchUpInside];
+    self.customCalloutView.delegate = self;
 
     [self addMapView];
     [self addScaleButton];
@@ -257,7 +289,6 @@ updatingLocation:(BOOL)updatingLocation
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    
 }
 
 /**

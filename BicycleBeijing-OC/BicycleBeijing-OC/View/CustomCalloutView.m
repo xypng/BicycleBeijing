@@ -92,6 +92,14 @@ const NSInteger kMoveBarHeight = 30;
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.poiArray.count<=1) {
+        return;
+    }
+    if ([self.delegate respondsToSelector:@selector(didDetailButtonTapped:)]) {
+        [self.delegate didDetailButtonTapped:indexPath.row];
+    }
+}
 #pragma mark - Initialization
 
 - (id)initWithFrame:(CGRect)frame
