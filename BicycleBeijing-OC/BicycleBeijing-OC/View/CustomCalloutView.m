@@ -18,11 +18,17 @@ const NSInteger kMoveBarHeight = 30;
 
 @interface CustomCalloutView()
 {
+    BOOL _canMoved;//是否可以移动
     BOOL _isMoved;//是否是在移动
     CGFloat _y;//移动时点下去时的y
 }
 
 @property (nonatomic, strong) UITableView *tableview;
+@property (nonatomic, strong) UIView *view1;
+@property (nonatomic, strong) UIView *view2;
+@property (nonatomic, strong) UIView *view3;
+@property (nonatomic, strong) UIView *lineView;
+@property (nonatomic, strong) UILabel *titleLabel;
 
 @end
 
@@ -50,6 +56,13 @@ const NSInteger kMoveBarHeight = 30;
 {
     self.poiArray = nil;
     [self removeFromSuperview];
+    self.view1.alpha = 1.0;
+    self.view2.alpha = 1.0;
+    self.view3.alpha = 1.0;
+    self.titleLabel.alpha = 0.0;
+    self.backButton.alpha = 0.0;
+    self.lineView.frame = CGRectMake(0, kMoveBarHeight-0.5, SCREEN_WIDTH, 0.5);
+    _canMoved = YES;
 }
 
 #pragma mark - UITableViewDelegate
@@ -86,8 +99,9 @@ const NSInteger kMoveBarHeight = 30;
     self = [super initWithFrame:frame];
     if (self)
     {
+        _canMoved = YES;
 
-        self.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.9];
+        self.backgroundColor = [UIColor whiteColor];
 
         self.tableview = [[UITableView alloc] init];
         self.tableview.bounces = NO;
@@ -96,29 +110,49 @@ const NSInteger kMoveBarHeight = 30;
         [self.tableview registerNib:[UINib nibWithNibName:CellID bundle:nil] forCellReuseIdentifier:CellID];
         self.tableview.delegate = self;
         self.tableview.dataSource = self;
+        [self addSubview:self.tableview];
 
+        //添加拖动按钮的图按（是三根横线）
         CGFloat lineWidth = 30.0;
         CGFloat lineHeight = 2.0;
         CGFloat lineSpace = 2.0;
-        UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-lineWidth)/2, (kMoveBarHeight-lineHeight*3-lineSpace*2)/2, lineWidth, lineHeight)];
-        view1.backgroundColor = [UIColor grayColor];
-        view1.layer.cornerRadius = 1.0;
-        UIView *view2 = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-lineWidth)/2, (kMoveBarHeight-lineHeight*3-lineSpace*2)/2 + (lineHeight+lineSpace), lineWidth, lineHeight)];
-        view2.layer.cornerRadius = 1.0;
-        view2.backgroundColor = [UIColor grayColor];
-        UIView *view3 = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-lineWidth)/2, (kMoveBarHeight-lineHeight*3-lineSpace*2)/2 + (lineHeight+lineSpace)*2, lineWidth, lineHeight)];
-        view3.layer.cornerRadius = 1.0;
-        view3.backgroundColor = [UIColor grayColor];
-        [self addSubview:view1];
-        [self addSubview:view2];
-        [self addSubview:view3];
+        self.view1 = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-lineWidth)/2, (kMoveBarHeight-lineHeight*3-lineSpace*2)/2, lineWidth, lineHeight)];
+        self.view1.backgroundColor = [UIColor grayColor];
+        self.view1.layer.cornerRadius = 1.0;
+        self.view2 = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-lineWidth)/2, (kMoveBarHeight-lineHeight*3-lineSpace*2)/2 + (lineHeight+lineSpace), lineWidth, lineHeight)];
+        self.view2.layer.cornerRadius = 1.0;
+        self.view2.backgroundColor = [UIColor grayColor];
+        self.view3 = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-lineWidth)/2, (kMoveBarHeight-lineHeight*3-lineSpace*2)/2 + (lineHeight+lineSpace)*2, lineWidth, lineHeight)];
+        self.view3.layer.cornerRadius = 1.0;
+        self.view3.backgroundColor = [UIColor grayColor];
+        [self addSubview:self.view1];
+        [self addSubview:self.view2];
+        [self addSubview:self.view3];
 
-        CALayer *layer = [CALayer layer];
-        layer.frame = CGRectMake(0, kMoveBarHeight-0.5, SCREEN_WIDTH, 0.5);
-        layer.backgroundColor = RGBA(214, 214, 214, 1).CGColor;
-        [self.layer addSublayer:layer];
-        
-        [self addSubview:self.tableview];
+        //添加标题
+        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, STATUS_BAR_HEIGHT, SCREEN_WIDTH, NAVIGATION_BAR_HEIGHT)];
+        self.titleLabel.backgroundColor = [UIColor whiteColor];
+        self.titleLabel.textColor = [UIColor blackColor];
+        self.titleLabel.text = @"网点列表";
+        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.titleLabel.alpha = 0.0;
+        [self addSubview:self.titleLabel];
+
+        //添加返回按钮
+        self.backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.backButton.frame = CGRectMake(0, STATUS_BAR_HEIGHT, 50, 44);
+        [self.backButton setTitle:@"返回" forState:UIControlStateNormal];
+        [self.backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        self.backButton.backgroundColor = [UIColor whiteColor];
+        self.backButton.alpha = 0.0;
+        [self addSubview:self.backButton];
+
+        //添加分隔线
+        self.lineView = [[UIView alloc] init];
+        self.lineView.frame = CGRectMake(0, kMoveBarHeight-0.5, SCREEN_WIDTH, 0.5);
+        self.lineView.backgroundColor = RGBA(214, 214, 214, 1);
+        [self addSubview:self.lineView];
+
     }
     return self;
 }
@@ -126,7 +160,7 @@ const NSInteger kMoveBarHeight = 30;
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:[touch view]];
-    if (point.y <= kMoveBarHeight) {
+    if (_canMoved && point.y <= kMoveBarHeight) {
         _isMoved = YES;
         _y = point.y;
         DLog(@"move");
@@ -140,13 +174,36 @@ const NSInteger kMoveBarHeight = 30;
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:[touch view].superview];
     DLog(@"%@", NSStringFromCGPoint(point));
+//    if (self.tableview.contentSize.height<SCREEN_HEIGHT-(point.y-_y)-kMoveBarHeight) {
+//        return;
+//    }
     self.frame = CGRectMake(0, point.y-_y, SCREEN_WIDTH, SCREEN_HEIGHT-(point.y-_y));
     self.tableview.frame = CGRectMake(0, kMoveBarHeight, SCREEN_WIDTH, SCREEN_HEIGHT-(point.y-_y)-kMoveBarHeight);
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     _isMoved = NO;
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:[touch view].superview];
     DLog(@"endMove");
+    if (point.y < SCREEN_HEIGHT/2.0) {
+        [UIView animateWithDuration:0.5 animations:^{
+            self.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+            self.tableview.frame = CGRectMake(0, STATUS_AND_NAVIGATION_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT-STATUS_AND_NAVIGATION_HEIGHT);
+            self.view1.alpha = 0;
+            self.view2.alpha = 0;
+            self.view3.alpha = 0;
+            self.lineView.frame = CGRectMake(0, STATUS_AND_NAVIGATION_HEIGHT-0.5, SCREEN_WIDTH, 0.5);
+            self.backButton.alpha = 1.0;
+            self.titleLabel.alpha = 1.0;
+        } completion:^(BOOL finished) {
+            _canMoved = NO;
+        }];
+    }
+}
+
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    _isMoved = NO;
 }
 
 @end

@@ -43,6 +43,10 @@
  */
 @property (nonatomic, strong) NSMutableArray *selectedPoiArray;
 /**
+ *  当前选中的标注
+ */
+@property (nonatomic, strong) ClusterAnnotation *selectedAnnotation;
+/**
  *
  */
 @property (nonatomic, assign) BOOL shouldRegionChangeReCalculate;
@@ -133,6 +137,10 @@
     }
 }
 
+- (void)dismissCalloutView:(UIButton *)btn {
+    [self.mapView deselectAnnotation:self.selectedAnnotation animated:YES];
+}
+
 
 #pragma mark - MAMapViewDelegate
 //定位成功返回
@@ -183,6 +191,7 @@ updatingLocation:(BOOL)updatingLocation
 - (void)mapView:(MAMapView *)mapView didDeselectAnnotationView:(MAAnnotationView *)view
 {
     [view setNeedsDisplay];
+    self.selectedAnnotation = nil;
     [self.selectedPoiArray removeAllObjects];
     [self.customCalloutView dismissCalloutView];
     self.customCalloutView.delegate = nil;
@@ -195,11 +204,12 @@ updatingLocation:(BOOL)updatingLocation
     }
     [view setNeedsDisplay];
     ClusterAnnotation *annotation = (ClusterAnnotation *)view.annotation;
+    self.selectedAnnotation = annotation;
     for (AMapPOI *poi in annotation.pois)
     {
         [self.selectedPoiArray addObject:poi];
     }
-    [self.mapView setCenterCoordinate:view.annotation.coordinate animated:YES];
+//    [self.mapView setCenterCoordinate:view.annotation.coordinate animated:YES];
     [self.customCalloutView setPoiArray:self.selectedPoiArray];
 //    self.customCalloutView.delegate = self;
 
@@ -238,6 +248,7 @@ updatingLocation:(BOOL)updatingLocation
     self.coordinateQuadTree = [[CoordinateQuadTree alloc] init];
     self.selectedPoiArray = [[NSMutableArray alloc] init];
     self.customCalloutView = [[CustomCalloutView alloc] init];
+    [self.customCalloutView.backButton addTarget:self action:@selector(dismissCalloutView:) forControlEvents:UIControlEventTouchUpInside];
 
     [self addMapView];
     [self addScaleButton];

@@ -20,6 +20,7 @@
 @interface CustomCalloutView : UIView<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSArray *poiArray;
+@property (nonatomic, strong) UIButton *backButton;
 
 @property (nonatomic, weak) id<CustomCalloutViewTapDelegate> delegate;
 
