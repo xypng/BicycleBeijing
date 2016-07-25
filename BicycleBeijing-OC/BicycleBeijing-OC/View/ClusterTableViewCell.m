@@ -7,6 +7,7 @@
 //
 
 #import "ClusterTableViewCell.h"
+#import "Bicycle.h"
 
 @implementation ClusterTableViewCell
 
@@ -19,6 +20,12 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)updateWithBicycle:(Bicycle *)bicycle {
+    self.nameLabel.text = bicycle.name;
+    self.addressLabel.text = bicycle.address;
+    self.numLabel.text = [NSString stringWithFormat:@"锁车器：%ld", (long)bicycle.num];
 }
 
 @end

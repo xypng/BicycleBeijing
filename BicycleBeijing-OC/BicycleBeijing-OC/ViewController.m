@@ -201,13 +201,13 @@ updatingLocation:(BOOL)updatingLocation
     }
 
     [self.mapView setCenterCoordinate:view.annotation.coordinate animated:YES];
-//    [self.customCalloutView setPoiArray:self.selectedPoiArray];
+    [self.customCalloutView setPoiArray:self.selectedPoiArray];
 //    self.customCalloutView.delegate = self;
 
     // 调整位置
-    self.customCalloutView.center = CGPointMake(CGRectGetMidX(view.bounds), -CGRectGetMidY(self.customCalloutView.bounds) - CGRectGetMidY(view.bounds) - kCalloutViewMargin);
+//    self.customCalloutView.center = CGPointMake(CGRectGetMidX(view.bounds), -CGRectGetMidY(self.customCalloutView.bounds) - CGRectGetMidY(view.bounds) - kCalloutViewMargin);
 
-    [view addSubview:self.customCalloutView];
+    [self.view addSubview:self.customCalloutView];
 }
 
 #pragma mark - AMapSearchDelegate

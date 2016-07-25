@@ -8,16 +8,13 @@
 
 #import "CustomCalloutView.h"
 #import "ClusterTableViewCell.h"
+#import "Bicycle.h"
 
-const NSInteger kArrorHeight = 10;
-const NSInteger kCornerRadius = 6;
+const NSInteger kMaxHeight = 225;
+const NSInteger kCellHeight = 120;
+const NSInteger kMoveBarHeight = 20;
 
-const NSInteger kWidth = 260;
-const NSInteger kMaxHeight = 200;
-
-const NSInteger kTableViewMargin = 4;
-const NSInteger kCellHeight = 152;
-
+#define CellID @"ClusterTableViewCell"
 
 @interface CustomCalloutView()
 
@@ -30,14 +27,19 @@ const NSInteger kCellHeight = 152;
 - (void)setPoiArray:(NSArray *)poiArrayy
 {
     _poiArray = [NSArray arrayWithArray:poiArrayy];
-    CGFloat totalHeight = kCellHeight * self.poiArray.count + kArrorHeight + 2 *kTableViewMargin;
+    CGFloat totalHeight = kCellHeight * self.poiArray.count+kMoveBarHeight;
     CGFloat height = MIN(totalHeight, kMaxHeight);
 
-    self.frame = CGRectMake(0, 0, kWidth, height);
+    self.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, height);
     
-    self.tableview.frame = CGRectMake(kCornerRadius, kTableViewMargin, kWidth - kCornerRadius * 2, height - kArrorHeight - kTableViewMargin * 2);
-    
-    [self setNeedsDisplay];
+    self.tableview.frame = CGRectMake(0, kMoveBarHeight, SCREEN_WIDTH, height-kMoveBarHeight);
+
+    [UIView animateWithDuration:0.5 animations:^{
+        self.frame = CGRectMake(0, SCREEN_HEIGHT-height, SCREEN_WIDTH, height);
+    } completion:^(BOOL finished) {
+
+    }];
+
     [self.tableview reloadData];
 }
 
@@ -49,17 +51,16 @@ const NSInteger kCellHeight = 152;
 
 #pragma mark - UITableViewDelegate
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return kCellHeight;
-//}
-
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     return kCellHeight;
 }
 
 #pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -68,53 +69,11 @@ const NSInteger kCellHeight = 152;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ClusterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ClusterTableViewCell" forIndexPath:indexPath];
+    ClusterTableViewCell *cell = (ClusterTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellID forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    AMapPOI *poi = [self.poiArray objectAtIndex:indexPath.row];
-    cell.nameLabel.text = poi.name;
-    cell.addressLabel.text = poi.address;
+    Bicycle *bicycle = [self.poiArray objectAtIndex:indexPath.row];
+    [cell updateWithBicycle:bicycle];
     return cell;
-}
-
-#pragma mark - draw rect
-
-- (void)drawRect:(CGRect)rect
-{
-    [self drawInContext:UIGraphicsGetCurrentContext()];
-    
-    self.layer.shadowColor = [[UIColor blackColor] CGColor];
-    self.layer.shadowOpacity = 1.0;
-    self.layer.shadowOffset = CGSizeMake(0.0f, 0.0f);
-}
-
-- (void)drawInContext:(CGContextRef)context
-{
-    CGContextSetLineWidth(context, 3.0);
-    CGContextSetFillColorWithColor(context, [UIColor colorWithRed:1 green:1 blue:1 alpha:1].CGColor);
-    
-    [self drawPath:context];
-    CGContextFillPath(context);
-}
-
-- (void)drawPath:(CGContextRef)context
-{
-    CGRect rrect = self.bounds;
-    CGFloat radius = kCornerRadius;
-    CGFloat minx = CGRectGetMinX(rrect),
-    midx = CGRectGetMidX(rrect),
-    maxx = CGRectGetMaxX(rrect);
-    CGFloat miny = CGRectGetMinY(rrect),
-    maxy = CGRectGetMaxY(rrect)-kArrorHeight;
-    
-    CGContextMoveToPoint(context, midx+kArrorHeight, maxy);
-    CGContextAddLineToPoint(context,midx, maxy+kArrorHeight);
-    CGContextAddLineToPoint(context,midx-kArrorHeight, maxy);
-
-    CGContextAddArcToPoint(context, minx, maxy, minx, miny, radius);
-    CGContextAddArcToPoint(context, minx, minx, maxx, miny, radius);
-    CGContextAddArcToPoint(context, maxx, miny, maxx, maxy, radius);
-    CGContextAddArcToPoint(context, maxx, maxy, midx+kArrorHeight, maxy, radius);
-    CGContextClosePath(context);
 }
 
 #pragma mark - Initialization
@@ -125,19 +84,19 @@ const NSInteger kCellHeight = 152;
     if (self)
     {
 
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.8];
 
         self.tableview = [[UITableView alloc] init];
+        self.tableview.bounces = NO;
         self.tableview.rowHeight = UITableViewAutomaticDimension;
+        self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [self.tableview registerNib:[UINib nibWithNibName:CellID bundle:nil] forCellReuseIdentifier:CellID];
         self.tableview.delegate = self;
         self.tableview.dataSource = self;
-        [self.tableview registerNib:[UINib nibWithNibName:@"ClusterTableViewCell" bundle:nil] forCellReuseIdentifier:@"ClusterTableViewCell"];
         
         [self addSubview:self.tableview];
     }
     return self;
 }
-
-
 
 @end
