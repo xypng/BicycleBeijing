@@ -38,11 +38,21 @@ const NSInteger kMoveBarHeight = 30;
 - (void)setPoiArray:(NSArray *)poiArrayy
 {
     _poiArray = [NSArray arrayWithArray:poiArrayy];
-    CGFloat totalHeight = kCellHeight * self.poiArray.count+kMoveBarHeight;
+
+    CGFloat barHeight = kMoveBarHeight;
+
+    if (poiArrayy.count>1) {
+        _canMoved = YES;
+    } else {
+        _canMoved = NO;
+        barHeight = 0.0;
+    }
+
+    CGFloat totalHeight = kCellHeight * self.poiArray.count+barHeight;
     CGFloat height = MIN(totalHeight, kMaxHeight);
 
     self.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, height);
-    self.tableview.frame = CGRectMake(0, kMoveBarHeight, SCREEN_WIDTH, height-kMoveBarHeight);
+    self.tableview.frame = CGRectMake(0, barHeight, SCREEN_WIDTH, height-barHeight);
 
     [UIView animateWithDuration:0.5 animations:^{
         CGRect toRect = CGRectMake(0, SCREEN_HEIGHT-height, SCREEN_WIDTH, height);
@@ -116,15 +126,6 @@ const NSInteger kMoveBarHeight = 30;
 
         self.backgroundColor = [UIColor whiteColor];
 
-        self.tableview = [[UITableView alloc] init];
-        self.tableview.bounces = NO;
-        self.tableview.rowHeight = UITableViewAutomaticDimension;
-        self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
-        [self.tableview registerNib:[UINib nibWithNibName:CellID bundle:nil] forCellReuseIdentifier:CellID];
-        self.tableview.delegate = self;
-        self.tableview.dataSource = self;
-        [self addSubview:self.tableview];
-
         //添加拖动按钮的图按（是三根横线）
         CGFloat lineWidth = 30.0;
         CGFloat lineHeight = 2.0;
@@ -166,6 +167,15 @@ const NSInteger kMoveBarHeight = 30;
         self.lineView.backgroundColor = RGBA(214, 214, 214, 1);
         [self addSubview:self.lineView];
 
+        self.tableview = [[UITableView alloc] init];
+        self.tableview.bounces = NO;
+        self.tableview.rowHeight = UITableViewAutomaticDimension;
+        self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [self.tableview registerNib:[UINib nibWithNibName:CellID bundle:nil] forCellReuseIdentifier:CellID];
+        self.tableview.delegate = self;
+        self.tableview.dataSource = self;
+        [self addSubview:self.tableview];
+
     }
     return self;
 }
@@ -203,7 +213,7 @@ const NSInteger kMoveBarHeight = 30;
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:[touch view].superview];
     DLog(@"endMove");
-    if (point.y < SCREEN_HEIGHT/2.0) {
+    if (point.y-_y < SCREEN_HEIGHT/2.0) {
         [UIView animateWithDuration:0.5 animations:^{
             self.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
             self.tableview.frame = CGRectMake(0, STATUS_AND_NAVIGATION_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT-STATUS_AND_NAVIGATION_HEIGHT);

@@ -105,9 +105,14 @@
             if (self.needSelectedBicycle!=nil) {
                 //如果没找到要先中的自行车网点，说明放的还不够大，继续放大
                 CGFloat currentLevel = self.mapView.zoomLevel;
-                if (currentLevel<19.0) {
+                if (currentLevel<self.mapView.maxZoomLevel) {
+                    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(self.needSelectedBicycle.latitude, self.needSelectedBicycle.longitude);
                     CGFloat toLevel = fmin(currentLevel+1.0, self.mapView.maxZoomLevel);
+                    [self.mapView setCenterCoordinate:coordinate animated:YES];
                     [self.mapView setZoomLevel:toLevel animated:YES];
+                } else {
+                    //不选中网点了
+                    self.needSelectedBicycle = nil;
                 }
             }
         }
@@ -192,6 +197,8 @@ updatingLocation:(BOOL)updatingLocation
 {
     DLog(@"地带变化");
     [self addAnnotationsToMapView:self.mapView];
+    //程序动地图的时候不允许用户动地图，程序动完了才允许用户动地图
+    self.mapView.userInteractionEnabled = YES;
 }
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
@@ -273,6 +280,8 @@ updatingLocation:(BOOL)updatingLocation
     Bicycle *bicycle = self.selectedPoiArray[index];
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(bicycle.latitude, bicycle.longitude);
     [self.customCalloutView dismissCalloutView];
+    //不允许用户操作地图
+//    self.mapView.userInteractionEnabled = NO;
     [self.mapView setCenterCoordinate:coordinate animated:YES];
     [self.mapView setZoomLevel:16.1 animated:YES];
     //设置要选中的网点，等放大完成后会选中
