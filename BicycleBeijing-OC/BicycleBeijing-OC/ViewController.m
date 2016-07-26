@@ -97,7 +97,7 @@
                 //如果没找到要先中的自行车网点，说明放的还不够大，继续放大
                 CGFloat currentLevel = self.mapView.zoomLevel;
                 if (currentLevel<19.0) {
-                    CGFloat toLevel = fmin(currentLevel+1.0, 19.0);
+                    CGFloat toLevel = fmin(currentLevel+1.0, self.mapView.maxZoomLevel);
                     [self.mapView setZoomLevel:toLevel animated:YES];
                 }
             }
