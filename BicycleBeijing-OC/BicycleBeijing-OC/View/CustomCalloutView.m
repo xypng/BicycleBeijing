@@ -243,6 +243,14 @@ const NSInteger kMoveBarHeight = 30;
         } completion:^(BOOL finished) {
             _canMoved = NO;
         }];
+    } else if (point.y-_y+kMoveBarHeight > SCREEN_HEIGHT-kCellHeight) {
+        [UIView animateWithDuration:0.5 animations:^{
+            CGRect toRect = CGRectMake(0, SCREEN_HEIGHT-kMoveBarHeight, SCREEN_WIDTH, kMoveBarHeight);
+            self.frame = toRect;
+            if ([self.delegate respondsToSelector:@selector(customCalloutView:willChangeFrame:)]) {
+                [self.delegate customCalloutView:self willChangeFrame:toRect];
+            }
+        }];
     }
 }
 
