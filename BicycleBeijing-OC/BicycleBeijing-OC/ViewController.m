@@ -300,7 +300,7 @@ updatingLocation:(BOOL)updatingLocation
     toRect.origin.y = calloutViewFrame.origin.y - self.locationButton.frame.size.height - 10;
     if (toRect.origin.y<0) {
         self.locationButton.frame = LoactionButtonFrame;
-    } else {
+    } else if (toRect.origin.y<SCREEN_HEIGHT-100) {
         self.locationButton.frame = toRect;
     }
 }
