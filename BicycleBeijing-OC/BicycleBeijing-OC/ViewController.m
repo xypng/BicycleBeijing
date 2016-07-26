@@ -93,6 +93,14 @@
                     self.needSelectedBicycle = nil;
                 }
             }
+            if (self.needSelectedBicycle!=nil) {
+                //如果没找到要先中的自行车网点，说明放的还不够大，继续放大
+                CGFloat currentLevel = self.mapView.zoomLevel;
+                if (currentLevel<19.0) {
+                    CGFloat toLevel = fmin(currentLevel+1.0, 19.0);
+                    [self.mapView setZoomLevel:toLevel animated:YES];
+                }
+            }
         }
         [self.mapView removeAnnotations:[toRemove allObjects]];
     });
