@@ -196,7 +196,7 @@ const NSInteger kMoveBarHeight = 30;
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:[touch view]];
+    CGPoint point = [touch locationInView:self];
     if (_canMoved && point.y <= kMoveBarHeight) {
         _isMoved = YES;
         _y = point.y;
@@ -209,7 +209,8 @@ const NSInteger kMoveBarHeight = 30;
         return;
     }
     UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:[touch view].superview];
+    CGPoint point = [touch locationInView:self.superview];
+    DLog(@"%@",[touch view]);
     DLog(@"%@", NSStringFromCGPoint(point));
 //    if (self.tableview.contentSize.height<SCREEN_HEIGHT-(point.y-_y)-kMoveBarHeight) {
 //        return;
@@ -225,7 +226,7 @@ const NSInteger kMoveBarHeight = 30;
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     _isMoved = NO;
     UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:[touch view].superview];
+    CGPoint point = [touch locationInView:self.superview];
     DLog(@"endMove");
     if (point.y-_y < SCREEN_HEIGHT/2.0) {
         [UIView animateWithDuration:0.5 animations:^{
