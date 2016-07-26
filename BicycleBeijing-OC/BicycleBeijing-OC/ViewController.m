@@ -281,7 +281,7 @@ updatingLocation:(BOOL)updatingLocation
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(bicycle.latitude, bicycle.longitude);
     [self.customCalloutView dismissCalloutView];
     //不允许用户操作地图
-//    self.mapView.userInteractionEnabled = NO;
+    self.mapView.userInteractionEnabled = NO;
     [self.mapView setCenterCoordinate:coordinate animated:YES];
     [self.mapView setZoomLevel:16.1 animated:YES];
     //设置要选中的网点，等放大完成后会选中
@@ -302,6 +302,8 @@ updatingLocation:(BOOL)updatingLocation
         self.locationButton.frame = LoactionButtonFrame;
     } else if (toRect.origin.y<SCREEN_HEIGHT-100) {
         self.locationButton.frame = toRect;
+    } else {
+        self.locationButton.frame = LoactionButtonFrame;
     }
 }
 

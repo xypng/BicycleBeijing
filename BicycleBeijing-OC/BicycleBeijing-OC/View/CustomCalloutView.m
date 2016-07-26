@@ -37,18 +37,29 @@ const NSInteger kMoveBarHeight = 30;
 
 - (void)setPoiArray:(NSArray *)poiArrayy
 {
+    if (poiArrayy.count==0) {
+        return;
+    }
     _poiArray = [NSArray arrayWithArray:poiArrayy];
 
     CGFloat barHeight = kMoveBarHeight;
+    CGFloat cellHeight = kCellHeight;
 
+    //如果标注只有一个，就不能移动,并且要算出cell的高，好让tableview不出现滚动
     if (poiArrayy.count>1) {
         _canMoved = YES;
     } else {
         _canMoved = NO;
         barHeight = 0.0;
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-69, 0)];
+        label.numberOfLines = 0;
+        label.font = [UIFont systemFontOfSize:17];
+        label.text = ((Bicycle *)poiArrayy[0]).address;
+        [label sizeToFit];
+        cellHeight = 107 + label.frame.size.height;
     }
 
-    CGFloat totalHeight = kCellHeight * self.poiArray.count+barHeight;
+    CGFloat totalHeight = cellHeight * self.poiArray.count+barHeight;
     CGFloat height = MIN(totalHeight, kMaxHeight);
 
     self.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, height);
@@ -71,6 +82,9 @@ const NSInteger kMoveBarHeight = 30;
 {
     self.poiArray = nil;
     [self removeFromSuperview];
+    if ([self.delegate respondsToSelector:@selector(customCalloutView:willChangeFrame:)]) {
+        [self.delegate customCalloutView:self willChangeFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 0)];
+    }
     self.view1.alpha = 1.0;
     self.view2.alpha = 1.0;
     self.view3.alpha = 1.0;
