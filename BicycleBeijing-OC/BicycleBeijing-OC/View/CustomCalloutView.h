@@ -9,9 +9,25 @@
 #import <UIKit/UIKit.h>
 #import <AMapSearchKit/AMapCommonObj.h>
 
+@class CustomCalloutView;
+
 @protocol CustomCalloutViewTapDelegate <NSObject>
 
-- (void)didDetailButtonTapped:(NSInteger)index;
+@optional
+/**
+ *  选中某一行
+ *
+ *  @param calloutView calloutVeiw
+ *  @param index       选中行号
+ */
+- (void)customCalloutView:(CustomCalloutView *)calloutView didDetailButtonTapped:(NSInteger)index;
+/**
+ *  弹出时调用
+ *
+ *  @param calloutView
+ *  @param calloutViewFrame 要弹出的frame
+ */
+- (void)customCalloutView:(CustomCalloutView *)calloutView willChangeFrame:(CGRect)calloutViewFrame;
 
 @end
 

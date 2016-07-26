@@ -17,7 +17,8 @@
 #import "ClusterAnnotationView.h"
 #import "ClusterAnnotation.h"
 
-#define kCalloutViewMargin -12
+//定位按钮初始位置
+#define LoactionButtonFrame CGRectMake(20, SCREEN_HEIGHT-100, 40, 40)
 
 @interface ViewController ()<MAMapViewDelegate, AMapSearchDelegate, CustomCalloutViewTapDelegate>
 {
@@ -30,6 +31,14 @@
  *  地图
  */
 @property (nonatomic, strong) MAMapView *mapView;
+/**
+ *  定位按钮
+ */
+@property (nonatomic, strong) UIButton *locationButton;
+/**
+ *  缩放按钮的view
+ */
+@property (nonatomic, strong) UIView *scaleView;
 /**
  *  四叉权
  */
@@ -234,8 +243,8 @@ updatingLocation:(BOOL)updatingLocation
         [self.selectedPoiArray addObject:poi];
     }
 //    [self.mapView setCenterCoordinate:view.annotation.coordinate animated:YES];
-    [self.customCalloutView setPoiArray:self.selectedPoiArray];
     self.customCalloutView.delegate = self;
+    [self.customCalloutView setPoiArray:self.selectedPoiArray];
 
     [self.view addSubview:self.customCalloutView];
 }
@@ -260,20 +269,31 @@ updatingLocation:(BOOL)updatingLocation
 
 #pragma mark - CustomCalloutViewTapDelegate
 //点击了网点列表上的一行
-- (void)didDetailButtonTapped:(NSInteger)index {
+- (void)customCalloutView:(CustomCalloutView *)calloutView didDetailButtonTapped:(NSInteger)index {
     Bicycle *bicycle = self.selectedPoiArray[index];
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(bicycle.latitude, bicycle.longitude);
     [self.customCalloutView dismissCalloutView];
     [self.mapView setCenterCoordinate:coordinate animated:YES];
     [self.mapView setZoomLevel:16.1 animated:YES];
+    //设置要选中的网点，等放大完成后会选中
     self.needSelectedBicycle = bicycle;
-//    for (ClusterAnnotationView *view in self.mapView.subviews[1].subviews) {
-//        if (view.annotation.coordinate.latitude == bicycle.latitude &&
-//            view.annotation.coordinate.longitude == bicycle.longitude) {
-//            [self.mapView selectAnnotation:view.annotation animated:YES];
-//        }
-//    }
-
+}
+//calloutview要弹出时会调用
+- (void)customCalloutView:(CustomCalloutView *)calloutView willChangeFrame:(CGRect)calloutViewFrame; {
+    //判断缩放按钮是否被遮住
+    BOOL scaleViewCoverd = CGRectGetMaxY(self.scaleView.frame)>calloutViewFrame.origin.y;
+    if (scaleViewCoverd) {
+        self.scaleView.alpha = 0.0;
+    } else {
+        self.scaleView.alpha = 1.0;
+    }
+    CGRect toRect = self.locationButton.frame;
+    toRect.origin.y = calloutViewFrame.origin.y - self.locationButton.frame.size.height - 10;
+    if (toRect.origin.y<0) {
+        self.locationButton.frame = LoactionButtonFrame;
+    } else {
+        self.locationButton.frame = toRect;
+    }
 }
 
 #pragma mark - Life Cycle
@@ -317,56 +337,56 @@ updatingLocation:(BOOL)updatingLocation
  *  添加缩放按钮
  */
 - (void)addScaleButton {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-60, SCREEN_HEIGHT-200, 40, 80)];
-    view.backgroundColor = [UIColor whiteColor];
-    view.layer.cornerRadius = 5.0;
-    view.layer.masksToBounds = YES;
-    view.layer.borderWidth = 0.5;
-    view.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.scaleView = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-60, SCREEN_HEIGHT-200, 40, 80)];
+    self.scaleView.backgroundColor = [UIColor whiteColor];
+    self.scaleView.layer.cornerRadius = 5.0;
+    self.scaleView.layer.masksToBounds = YES;
+    self.scaleView.layer.borderWidth = 0.5;
+    self.scaleView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     CALayer *layer = [CALayer layer];
-    layer.frame = CGRectMake(5, CGRectGetHeight(view.frame)/2.0, CGRectGetWidth(view.frame)-10, 0.5);
+    layer.frame = CGRectMake(5, CGRectGetHeight(self.scaleView.frame)/2.0, CGRectGetWidth(self.scaleView.frame)-10, 0.5);
     layer.backgroundColor = [UIColor lightGrayColor].CGColor;
-    [view.layer addSublayer:layer];
-    [self.view addSubview:view];
+    [self.scaleView.layer addSublayer:layer];
+    [self.view addSubview:self.scaleView];
 
     UIButton *enlargeScaleButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    enlargeScaleButton.frame = CGRectMake(0, 0, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame)/2);
+    enlargeScaleButton.frame = CGRectMake(0, 0, CGRectGetWidth(self.scaleView.frame), CGRectGetHeight(self.scaleView.frame)/2);
     [enlargeScaleButton setTitle:@"+" forState:UIControlStateNormal];
     enlargeScaleButton.titleLabel.font = [UIFont systemFontOfSize:25];
     [enlargeScaleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [enlargeScaleButton setBackgroundImage:[ImageUtilities createImageWithColor:[UIColor lightGrayColor]] forState:UIControlStateHighlighted];
     [enlargeScaleButton addTarget:self action:@selector(scaleZoom:) forControlEvents:UIControlEventTouchUpInside];
     enlargeScaleButton.tag = 101;
-    [view addSubview:enlargeScaleButton];
+    [self.scaleView addSubview:enlargeScaleButton];
 
     UIButton *reduceScaleButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    reduceScaleButton.frame = CGRectMake(0, CGRectGetHeight(view.frame)/2, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame)/2);
+    reduceScaleButton.frame = CGRectMake(0, CGRectGetHeight(self.scaleView.frame)/2, CGRectGetWidth(self.scaleView.frame), CGRectGetHeight(self.scaleView.frame)/2);
     [reduceScaleButton setTitle:@"-" forState:UIControlStateNormal];
     reduceScaleButton.titleLabel.font = [UIFont systemFontOfSize:30];
     [reduceScaleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [reduceScaleButton setBackgroundImage:[ImageUtilities createImageWithColor:[UIColor lightGrayColor]] forState:UIControlStateHighlighted];
     [reduceScaleButton addTarget:self action:@selector(scaleZoom:) forControlEvents:UIControlEventTouchUpInside];
     reduceScaleButton.tag = 102;
-    [view addSubview:reduceScaleButton];
+    [self.scaleView addSubview:reduceScaleButton];
 }
 
 /**
  *  添加到定位位置按钮
  */
 - (void)addLocationButton {
-    UIButton *locationButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    locationButton.frame = CGRectMake(20, SCREEN_HEIGHT-100, 40, 40);
-    locationButton.backgroundColor = [UIColor whiteColor];
-    locationButton.layer.cornerRadius = 5.0;
-    locationButton.layer.masksToBounds = YES;
-    locationButton.layer.borderWidth = 0.5;
-    locationButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    [locationButton setBackgroundImage:[ImageUtilities createImageWithColor:[UIColor lightGrayColor]] forState:UIControlStateHighlighted];
-    [locationButton setTitle:@"◉" forState:UIControlStateNormal];
-    [locationButton setTitleColor:RGB(40, 140, 230) forState:UIControlStateNormal];
-    locationButton.titleLabel.font = [UIFont systemFontOfSize:30];
-    [locationButton addTarget:self action:@selector(locationButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:locationButton];
+    self.locationButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.locationButton.frame = LoactionButtonFrame;
+    self.locationButton.backgroundColor = [UIColor whiteColor];
+    self.locationButton.layer.cornerRadius = 5.0;
+    self.locationButton.layer.masksToBounds = YES;
+    self.locationButton.layer.borderWidth = 0.5;
+    self.locationButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    [self.locationButton setBackgroundImage:[ImageUtilities createImageWithColor:[UIColor lightGrayColor]] forState:UIControlStateHighlighted];
+    [self.locationButton setTitle:@"◉" forState:UIControlStateNormal];
+    [self.locationButton setTitleColor:RGB(40, 140, 230) forState:UIControlStateNormal];
+    self.locationButton.titleLabel.font = [UIFont systemFontOfSize:30];
+    [self.locationButton addTarget:self action:@selector(locationButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.locationButton];
 }
 
 /**

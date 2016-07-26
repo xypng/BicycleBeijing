@@ -9,6 +9,7 @@
 #import "CustomCalloutView.h"
 #import "ClusterTableViewCell.h"
 #import "Bicycle.h"
+#import "ViewController.h"
 
 const NSInteger kMaxHeight = 225;
 const NSInteger kCellHeight = 120;
@@ -44,7 +45,11 @@ const NSInteger kMoveBarHeight = 30;
     self.tableview.frame = CGRectMake(0, kMoveBarHeight, SCREEN_WIDTH, height-kMoveBarHeight);
 
     [UIView animateWithDuration:0.5 animations:^{
-        self.frame = CGRectMake(0, SCREEN_HEIGHT-height, SCREEN_WIDTH, height);
+        CGRect toRect = CGRectMake(0, SCREEN_HEIGHT-height, SCREEN_WIDTH, height);
+        self.frame = toRect;
+        if ([self.delegate respondsToSelector:@selector(customCalloutView:willChangeFrame:)]) {
+            [self.delegate customCalloutView:self willChangeFrame:toRect];
+        }
     } completion:^(BOOL finished) {
 
     }];
@@ -96,8 +101,8 @@ const NSInteger kMoveBarHeight = 30;
     if (self.poiArray.count<=1) {
         return;
     }
-    if ([self.delegate respondsToSelector:@selector(didDetailButtonTapped:)]) {
-        [self.delegate didDetailButtonTapped:indexPath.row];
+    if ([self.delegate respondsToSelector:@selector(customCalloutView:didDetailButtonTapped:)]) {
+        [self.delegate customCalloutView:self didDetailButtonTapped:indexPath.row];
     }
 }
 #pragma mark - Initialization
@@ -185,8 +190,12 @@ const NSInteger kMoveBarHeight = 30;
 //    if (self.tableview.contentSize.height<SCREEN_HEIGHT-(point.y-_y)-kMoveBarHeight) {
 //        return;
 //    }
-    self.frame = CGRectMake(0, point.y-_y, SCREEN_WIDTH, SCREEN_HEIGHT-(point.y-_y));
+    CGRect toRect = CGRectMake(0, point.y-_y, SCREEN_WIDTH, SCREEN_HEIGHT-(point.y-_y));
+    self.frame = toRect;
     self.tableview.frame = CGRectMake(0, kMoveBarHeight, SCREEN_WIDTH, SCREEN_HEIGHT-(point.y-_y)-kMoveBarHeight);
+    if ([self.delegate respondsToSelector:@selector(customCalloutView:willChangeFrame:)]) {
+        [self.delegate customCalloutView:self willChangeFrame:toRect];
+    }
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -204,6 +213,9 @@ const NSInteger kMoveBarHeight = 30;
             self.lineView.frame = CGRectMake(0, STATUS_AND_NAVIGATION_HEIGHT-0.5, SCREEN_WIDTH, 0.5);
             self.backButton.alpha = 1.0;
             self.titleLabel.alpha = 1.0;
+            if ([self.delegate respondsToSelector:@selector(customCalloutView:willChangeFrame:)]) {
+                [self.delegate customCalloutView:self willChangeFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+            }
         } completion:^(BOOL finished) {
             _canMoved = NO;
         }];
