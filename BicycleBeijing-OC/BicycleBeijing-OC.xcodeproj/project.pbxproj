@@ -26,6 +26,10 @@
 		AE33F22C1D3DC1F200EB6286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE33F22B1D3DC1F200EB6286 /* Assets.xcassets */; };
 		AE33F22F1D3DC1F200EB6286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE33F22D1D3DC1F200EB6286 /* LaunchScreen.storyboard */; };
 		AE33F2391D3DE11C00EB6286 /* ImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE33F2381D3DE11C00EB6286 /* ImageUtilities.m */; };
+		AE86BEB51D49B14100720ADC /* DownloadOfflinMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE86BEB31D49B14100720ADC /* DownloadOfflinMapViewController.m */; };
+		AE86BEB61D49B14100720ADC /* DownloadOfflinMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE86BEB41D49B14100720ADC /* DownloadOfflinMapViewController.xib */; };
+		AE86BEBA1D49B23100720ADC /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE86BEB81D49B23100720ADC /* CollectionViewController.m */; };
+		AE86BEBB1D49B23100720ADC /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE86BEB91D49B23100720ADC /* CollectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +60,8 @@
 		AE33F2201D3DC1F200EB6286 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE33F2221D3DC1F200EB6286 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE33F2231D3DC1F200EB6286 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE33F2251D3DC1F200EB6286 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AE33F2261D3DC1F200EB6286 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE33F2251D3DC1F200EB6286 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		AE33F2261D3DC1F200EB6286 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		AE33F2291D3DC1F200EB6286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE33F22B1D3DC1F200EB6286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE33F22E1D3DC1F200EB6286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +74,12 @@
 		AE33F2421D3E034E00EB6286 /* NotificationMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationMacros.h; sourceTree = "<group>"; };
 		AE33F2431D3E03A600EB6286 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		AE33F2441D3E042B00EB6286 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		AE86BEB21D49B14100720ADC /* DownloadOfflinMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOfflinMapViewController.h; sourceTree = "<group>"; };
+		AE86BEB31D49B14100720ADC /* DownloadOfflinMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOfflinMapViewController.m; sourceTree = "<group>"; };
+		AE86BEB41D49B14100720ADC /* DownloadOfflinMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadOfflinMapViewController.xib; sourceTree = "<group>"; };
+		AE86BEB71D49B23100720ADC /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		AE86BEB81D49B23100720ADC /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		AE86BEB91D49B23100720ADC /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		AEFE05791D3E2D460016E5E3 /* KeyMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,14 +172,13 @@
 		AE33F21E1D3DC1F200EB6286 /* BicycleBeijing-OC */ = {
 			isa = PBXGroup;
 			children = (
+				AE86BEB11D49B0A300720ADC /* Controller */,
 				AE02E6691D41F0E4009AAF16 /* View */,
 				AE02E6681D41F0CE009AAF16 /* Model */,
 				AE2259C71D40B90E005C4343 /* DB */,
 				AE2FC6EA1D45EAC000AD4D90 /* Categories */,
 				AE33F2221D3DC1F200EB6286 /* AppDelegate.h */,
 				AE33F2231D3DC1F200EB6286 /* AppDelegate.m */,
-				AE33F2251D3DC1F200EB6286 /* ViewController.h */,
-				AE33F2261D3DC1F200EB6286 /* ViewController.m */,
 				AE33F2281D3DC1F200EB6286 /* Main.storyboard */,
 				AE33F22B1D3DC1F200EB6286 /* Assets.xcassets */,
 				AE33F22D1D3DC1F200EB6286 /* LaunchScreen.storyboard */,
@@ -202,6 +211,21 @@
 				AE33F2381D3DE11C00EB6286 /* ImageUtilities.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		AE86BEB11D49B0A300720ADC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE33F2251D3DC1F200EB6286 /* ViewController.h */,
+				AE33F2261D3DC1F200EB6286 /* ViewController.m */,
+				AE86BEB21D49B14100720ADC /* DownloadOfflinMapViewController.h */,
+				AE86BEB31D49B14100720ADC /* DownloadOfflinMapViewController.m */,
+				AE86BEB41D49B14100720ADC /* DownloadOfflinMapViewController.xib */,
+				AE86BEB71D49B23100720ADC /* CollectionViewController.h */,
+				AE86BEB81D49B23100720ADC /* CollectionViewController.m */,
+				AE86BEB91D49B23100720ADC /* CollectionViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		EB0F07955A4A0349AC0976E7 /* Pods */ = {
@@ -275,7 +299,9 @@
 			files = (
 				AE2259CD1D40B90E005C4343 /* beijingbicycle.sqlite in Resources */,
 				AE12A87D1D426FAE00342B78 /* ClusterTableViewCell.xib in Resources */,
+				AE86BEBB1D49B23100720ADC /* CollectionViewController.xib in Resources */,
 				AE33F22F1D3DC1F200EB6286 /* LaunchScreen.storyboard in Resources */,
+				AE86BEB61D49B14100720ADC /* DownloadOfflinMapViewController.xib in Resources */,
 				AE33F22C1D3DC1F200EB6286 /* Assets.xcassets in Resources */,
 				AE33F22A1D3DC1F200EB6286 /* Main.storyboard in Resources */,
 			);
@@ -341,8 +367,10 @@
 				AE12A87C1D426FAE00342B78 /* ClusterTableViewCell.m in Sources */,
 				AE02E6701D41F147009AAF16 /* ClusterAnnotation.m in Sources */,
 				AE33F2391D3DE11C00EB6286 /* ImageUtilities.m in Sources */,
+				AE86BEB51D49B14100720ADC /* DownloadOfflinMapViewController.m in Sources */,
 				AE02E6711D41F147009AAF16 /* CoordinateQuadTree.m in Sources */,
 				AE2259CF1D40B90E005C4343 /* DataManager.m in Sources */,
+				AE86BEBA1D49B23100720ADC /* CollectionViewController.m in Sources */,
 				AE2FC6ED1D45EAD600AD4D90 /* CALayer+XibConfiguration.m in Sources */,
 				AE33F2271D3DC1F200EB6286 /* ViewController.m in Sources */,
 				AE33F2241D3DC1F200EB6286 /* AppDelegate.m in Sources */,

@@ -1,0 +1,2380 @@
+ERROR:root:2016-09-05 15:30:59
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error timed out>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:31:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 65] No route to host>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 15:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 41, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:07:31
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1201, in do_open
+    r = h.getresponse(buffering=True)
+  File "/Users/MacBook/anaconda/lib/python2.7/httplib.py", line 1136, in getresponse
+    response.begin()
+  File "/Users/MacBook/anaconda/lib/python2.7/httplib.py", line 453, in begin
+    version, status, reason = self._read_status()
+  File "/Users/MacBook/anaconda/lib/python2.7/httplib.py", line 409, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/Users/MacBook/anaconda/lib/python2.7/socket.py", line 480, in readline
+    data = self._sock.recv(self._rbufsize)
+timeout: timed out
+
+ERROR:root:2016-09-05 16:07:31
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:07:31
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:07:31
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:07:31
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:07:31
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:10:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:20:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:25:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:30:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:36:04
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 45, in netBicycles
+    result = response.read()
+  File "/Users/MacBook/anaconda/lib/python2.7/socket.py", line 355, in read
+    data = self._sock.recv(rbufsize)
+  File "/Users/MacBook/anaconda/lib/python2.7/httplib.py", line 588, in read
+    return self._read_chunked(amt)
+  File "/Users/MacBook/anaconda/lib/python2.7/httplib.py", line 652, in _read_chunked
+    value.append(self._safe_read(amt))
+  File "/Users/MacBook/anaconda/lib/python2.7/httplib.py", line 703, in _safe_read
+    chunk = self.fp.read(min(amt, MAXAMOUNT))
+  File "/Users/MacBook/anaconda/lib/python2.7/socket.py", line 384, in read
+    data = self._sock.recv(left)
+timeout: timed out
+
+ERROR:root:2016-09-05 16:36:04
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:36:04
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:36:04
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:36:04
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:36:04
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:36:04
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:36:04
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:40:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:45:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:49:59
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 16:50:00
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 44, in netBicycles
+    response = urllib2.urlopen(request, timeout=60)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Users/MacBook/anaconda/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+ERROR:root:2016-09-05 20:08:51
+ERROR:root:Traceback (most recent call last):
+  File "./SpiderInterval.py", line 45, in netBicycles
+    result = response.read()
+  File "/Users/MacBook/anaconda/lib/python2.7/socket.py", line 355, in read
+    data = self._sock.recv(rbufsize)
+  File "/Users/MacBook/anaconda/lib/python2.7/httplib.py", line 588, in read
+    return self._read_chunked(amt)
+  File "/Users/MacBook/anaconda/lib/python2.7/httplib.py", line 652, in _read_chunked
+    value.append(self._safe_read(amt))
+  File "/Users/MacBook/anaconda/lib/python2.7/httplib.py", line 703, in _safe_read
+    chunk = self.fp.read(min(amt, MAXAMOUNT))
+  File "/Users/MacBook/anaconda/lib/python2.7/socket.py", line 384, in read
+    data = self._sock.recv(left)
+timeout: timed out
+

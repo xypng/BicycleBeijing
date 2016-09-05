@@ -16,6 +16,7 @@
 #import "CustomCalloutView.h"
 #import "ClusterAnnotationView.h"
 #import "ClusterAnnotation.h"
+#import "DownloadOfflinMapViewController.h"
 
 //定位按钮初始位置
 #define LoactionButtonFrame CGRectMake(20, SCREEN_HEIGHT-100, 40, 40)
@@ -63,10 +64,6 @@
  *  等地图变化完毕需要选中的的网点
  */
 @property (nonatomic, assign) Bicycle *needSelectedBicycle;
-/**
- *  北京离线地图下载项
- */
-@property (nonatomic, strong) MAOfflineItem *beijingOfflineItem;
 
 @end
 
@@ -325,18 +322,11 @@ updatingLocation:(BOOL)updatingLocation
     [self.customCalloutView.backButton addTarget:self action:@selector(dismissCalloutView:) forControlEvents:UIControlEventTouchUpInside];
     self.customCalloutView.delegate = self;
 
-    NSArray *cities = [MAOfflineMap sharedOfflineMap].cities;
-    for (MAOfflineItem *item in cities) {
-        if ([item.name isEqualToString:@"北京市"]) {
-            self.beijingOfflineItem = item;
-            break;
-        }
-    }
     [self addMapView];
     [self addScaleButton];
     [self addLocationButton];
     [self addAnnotation];
-//    [self addDownloadOfflineMapButton];
+    [self addDownloadOfflineMapButton];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -437,7 +427,7 @@ updatingLocation:(BOOL)updatingLocation
  */
 - (void)addDownloadOfflineMapButton {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(50, 50, 100, 20);
+    button.frame = CGRectMake(SCREEN_WIDTH-100, SCREEN_HEIGHT-100, 80, 40);
     button.backgroundColor = [UIColor whiteColor];
     [button setTitle:@"下载" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
@@ -446,39 +436,10 @@ updatingLocation:(BOOL)updatingLocation
 }
 
 - (void)downloadOfflineMap:(UIButton *)btn {
-    if (self.beijingOfflineItem==nil || self.beijingOfflineItem.itemStatus == MAOfflineItemStatusInstalled) {
-        return;
-    }
-    DLog(@"download=%@", self.beijingOfflineItem.name);
-    [[MAOfflineMap sharedOfflineMap] downloadItem:self.beijingOfflineItem shouldContinueWhenAppEntersBackground:YES downloadBlock:^(MAOfflineItem *downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
-        if (downloadStatus == MAOfflineMapDownloadStatusWaiting)
-        {
-            NSLog(@"状态为: %@", @"等待下载");
-        }
-        else if(downloadStatus == MAOfflineMapDownloadStatusStart)
-        {
-            NSLog(@"状态为: %@", @"开始下载");
-        }
-        else if(downloadStatus == MAOfflineMapDownloadStatusProgress)
-        {
-            NSLog(@"状态为: %@", @"正在下载");
-        }
-        else if(downloadStatus == MAOfflineMapDownloadStatusCancelled) {
-            NSLog(@"状态为: %@", @"取消下载");
-        }
-        else if(downloadStatus == MAOfflineMapDownloadStatusCompleted) {
-            NSLog(@"状态为: %@", @"下载完成");
-        }
-        else if(downloadStatus == MAOfflineMapDownloadStatusUnzip) {
-            NSLog(@"状态为: %@", @"下载完成，正在解压缩");
-        }
-        else if(downloadStatus == MAOfflineMapDownloadStatusError) {
-            NSLog(@"状态为: %@", @"下载错误");
-        }
-        else if(downloadStatus == MAOfflineMapDownloadStatusFinished) {
-            NSLog(@"状态为: %@", @"全部完成");
-            [self.mapView reloadMap];              //激活离线地图
-        }
+    DownloadOfflinMapViewController *mapController = [[DownloadOfflinMapViewController alloc] init];
+    UINavigationController *VC = [[UINavigationController alloc] initWithRootViewController:mapController];
+    [self presentViewController:VC animated:YES completion:^{
+
     }];
 }
 

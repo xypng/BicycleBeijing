@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadOfflinMapViewController">
+            <connections>
+                <outlet property="downloadButton" destination="vDe-rk-XeQ" id="J2S-wB-w38"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前为Wi-Fi网络，切换至运营商网络会自动停止下载" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiW-L2-4gw">
+                    <rect key="frame" x="0.0" y="64" width="320" height="28"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="jdu-YV-Xhh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOS-Or-Sn0">
+                    <rect key="frame" x="0.0" y="108" width="320" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDe-rk-XeQ">
+                            <rect key="frame" x="266" y="10" width="46" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="Xk4-mB-cV4"/>
+                                <constraint firstAttribute="height" constant="20" id="qlD-Bk-3pf"/>
+                            </constraints>
+                            <state key="normal" title="下载"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                    <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljD-uu-f4p">
+                            <rect key="frame" x="8" y="9" width="51" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ljD-uu-f4p" firstAttribute="leading" secondItem="nOS-Or-Sn0" secondAttribute="leading" constant="8" id="O3M-Hb-PBr"/>
+                        <constraint firstAttribute="trailing" secondItem="vDe-rk-XeQ" secondAttribute="trailing" constant="8" id="Vrg-yB-5gM"/>
+                        <constraint firstItem="ljD-uu-f4p" firstAttribute="centerY" secondItem="nOS-Or-Sn0" secondAttribute="centerY" id="arP-rW-1mc"/>
+                        <constraint firstAttribute="height" constant="40" id="nJG-68-XCP"/>
+                        <constraint firstItem="vDe-rk-XeQ" firstAttribute="centerY" secondItem="nOS-Or-Sn0" secondAttribute="centerY" id="z2K-Rw-WPl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1J-He-01f">
+                    <rect key="frame" x="0.0" y="156" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wi-Fi环境下自动更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hks-qM-7P2">
+                            <rect key="frame" x="8" y="9" width="160" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1T-mW-vyr">
+                            <rect key="frame" x="263" y="4.5" width="51" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="DID-Rh-b9L"/>
+                                <constraint firstAttribute="width" constant="49" id="rUc-PS-kTf"/>
+                            </constraints>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Hks-qM-7P2" firstAttribute="leading" secondItem="A1J-He-01f" secondAttribute="leading" constant="8" id="7RM-WE-njI"/>
+                        <constraint firstItem="Hks-qM-7P2" firstAttribute="centerY" secondItem="A1J-He-01f" secondAttribute="centerY" id="8k8-3V-zWc"/>
+                        <constraint firstAttribute="height" constant="40" id="Y3C-SG-oha"/>
+                        <constraint firstItem="a1T-mW-vyr" firstAttribute="centerY" secondItem="A1J-He-01f" secondAttribute="centerY" id="atA-gi-o8m"/>
+                        <constraint firstAttribute="trailing" secondItem="a1T-mW-vyr" secondAttribute="trailing" constant="8" id="uEa-QV-LIp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.86274509799999999" green="0.87843137250000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nOS-Or-Sn0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="54R-lh-7JL"/>
+                <constraint firstItem="A1J-He-01f" firstAttribute="top" secondItem="nOS-Or-Sn0" secondAttribute="bottom" constant="8" id="6TC-EA-zb0"/>
+                <constraint firstAttribute="trailing" secondItem="nOS-Or-Sn0" secondAttribute="trailing" id="9uD-Gp-X8t"/>
+                <constraint firstAttribute="trailing" secondItem="ZiW-L2-4gw" secondAttribute="trailing" id="T9l-DN-fuq"/>
+                <constraint firstItem="ZiW-L2-4gw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="f25-dk-J1y"/>
+                <constraint firstAttribute="trailing" secondItem="A1J-He-01f" secondAttribute="trailing" id="gFr-1N-CiP"/>
+                <constraint firstItem="A1J-He-01f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kQu-HJ-VaW"/>
+                <constraint firstItem="ZiW-L2-4gw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="thd-Ww-JNY"/>
+                <constraint firstItem="nOS-Or-Sn0" firstAttribute="top" secondItem="ZiW-L2-4gw" secondAttribute="bottom" constant="16" id="u92-Yi-dyY"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
