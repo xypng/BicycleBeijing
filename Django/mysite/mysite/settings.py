@@ -26,7 +26,7 @@ SECRET_KEY = 'y8l7=)!8$ulll^@@*+vgbon#05$n&2%dinhw@-2v883nai(&%q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0:8000']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -110,6 +110,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+ADMINS=(
+    'xypng', 'helloxyp@gmail.com',
+)
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ieyodeeq@gmail.com'
+EMAIL_HOST_PASSWORD = '********'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
@@ -128,3 +137,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
