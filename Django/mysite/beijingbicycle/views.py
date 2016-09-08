@@ -38,7 +38,11 @@ def version(request, version):
     adds = BicycleStation.objects.filter(code__in=addlist)
     result = {"delete":deletelist, "add":liststations(adds), "modify":liststations(modifys)}
     return HttpResponse(json.dumps(result))
-        
+
+#查询区域所有的网点信息
+def areaStations(request, area):
+    bicycleStations = BicycleStation.objects.filter(zone=area)
+    return HttpResponse(jsonstations(bicycleStations))
 
 def jsonstations(bicycleStations):
     data = {}

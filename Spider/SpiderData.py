@@ -86,7 +86,7 @@ class Spider(object):
                     dbbicycle.updatetime = netbicycle["maxReportTime"]
                 if modify:
                     #添加Logs表,0是修改
-                    print 'aaa'
+                    print '修改了一条数据'
                     self.addlog(dbbicycle, 0)
 
                 #从字典中删除

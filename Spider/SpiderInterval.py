@@ -60,10 +60,10 @@ def logError():
     logging.error(traceback.format_exc())
 
 if __name__ == '__main__':
-    while True:
-        print "开始执行:", time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
-        delayrun()
-        print "结束执行:", time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
-        time_remaining = interval-time.time()%interval
-        print "还要等：", time_remaining
-        time.sleep(time_remaining)
+    # while True:
+    # print "开始执行:", time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+    delayrun()
+    # print "结束执行:", time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+    # time_remaining = interval-time.time()%interval
+    # print "还要等：", time_remaining
+    # time.sleep(time_remaining)
